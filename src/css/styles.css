@@ -79,11 +79,6 @@ body {
   align-items: center;
 }
 
-.tabs a.current-tab {
-  font-weight: 1000;
-  color: orange;
-}
-
 .tabs a:hover::after {
   content: '';
   position: absolute;
@@ -92,4 +87,9 @@ body {
   left: 50%;
   bottom: 0rem;
   border-bottom: 0.1rem solid white;
+}
+
+.tabs a.current-tab {
+  font-weight: 1000;
+  color: orange;
 }
