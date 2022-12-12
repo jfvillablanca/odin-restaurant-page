@@ -16,8 +16,11 @@ const imgHero = document.createElement("img");
 imgHero.setAttribute("src", ImgHero);
 imgHero.setAttribute("alt", "A lot of meat on the grill");
 
-divHero.appendChild(h1Welcome);
-divHero.appendChild(h2Welcome);
+const headerWelcome = document.createElement("div");
+headerWelcome.classList.add("headers");
+headerWelcome.appendChild(h1Welcome);
+headerWelcome.appendChild(h2Welcome);
+divHero.appendChild(headerWelcome);
 divHero.appendChild(imgHero);
 
 const divTabs = document.createElement("div");
