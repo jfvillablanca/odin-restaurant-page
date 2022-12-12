@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,600");
 
-* {
-  border: 1px solid orchid;
-}
-
 :root {
   font-size: 62.5%
 }
@@ -17,7 +13,6 @@ body {
   min-width: 100vw;
 
   display: grid;
-  grid-template-rows: 1.5fr 1fr;
 }
 
 .hero {
@@ -53,3 +48,31 @@ body {
   font-size: 5rem;
 }
 
+.tabs {
+  margin-top: 3rem;
+  min-width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: "A B C"
+                       "D D D";
+  justify-items: center;
+
+  position: absolute;
+  z-index: 1;
+
+  font-size: 3.1rem;
+
+  color: white;
+}
+
+.tabs > .home {
+  grid-area: A;
+}
+.tabs > .menu {
+  grid-area: B;
+}
+.tabs > .contact {
+  grid-area: C;
+}

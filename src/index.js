@@ -2,7 +2,7 @@ import './css/normalize.css';
 import './css/skeleton.css';
 import './css/styles.css';
 
-import ImgHero from './images/assets/nico-smit-9ZJOs9hmuKs-unsplash.jpg';
+import ImgHero from './images/assets/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg';
 
 const containerContent = document.querySelector("#content");
 
@@ -39,5 +39,5 @@ divTabs.appendChild(divTabHome);
 divTabs.appendChild(divTabMenu);
 divTabs.appendChild(divTabContact);
 
-containerContent.appendChild(divHero);
 containerContent.appendChild(divTabs);
+containerContent.appendChild(divHero);
