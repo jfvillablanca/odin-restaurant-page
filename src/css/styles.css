@@ -40,6 +40,8 @@ body {
   z-index: 1;
 
   color: white;
+  display: grid;
+  justify-items: center;
 }
 
 .headers h1 {
