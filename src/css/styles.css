@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,600");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes:400");
+@import url("https://fontlibrary.org//face/gotica");
 
 :root {
   font-size: 62.5%
@@ -40,16 +43,19 @@ body {
 }
 
 .headers h1 {
-  font-weight: 1000;
-  font-size: 8rem;
+  font-family: 'GothicaBold', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 11rem;
   color: orange;
 }
 
 .headers h2 {
-  font-size: 5rem;
+  font-family: 'Great Vibes', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 8rem;
 }
 
 .tabs {
+  font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-top: 3rem;
   min-width: 100%;
 
@@ -90,6 +96,6 @@ body {
 }
 
 .tabs a.current-tab {
-  font-weight: 1000;
+  font-weight: 700;
   color: orange;
 }
