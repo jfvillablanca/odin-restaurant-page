@@ -1,1 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,300,600");
+
+* {
+  border: 1px solid orchid;
+}
+
+:root {
+  font-size: 62.5%
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#content {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
