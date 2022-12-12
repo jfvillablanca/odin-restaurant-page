@@ -2,6 +2,8 @@ import './css/normalize.css';
 import './css/skeleton.css';
 import './css/styles.css';
 
+import ImgHero from './images/assets/nico-smit-9ZJOs9hmuKs-unsplash.jpg';
+
 const containerContent = document.querySelector("#content");
 
 const divHero = document.createElement("div");
@@ -11,7 +13,7 @@ h1Welcome.textContent = "Welcome to Jorrvaskr";
 const h2Welcome = document.createElement("h2");
 h2Welcome.textContent = "Where we feast like we're in Valhalla";
 const imgHero = document.createElement("img");
-imgHero.setAttribute("src", "");
+imgHero.setAttribute("src", ImgHero);
 imgHero.setAttribute("alt", "A lot of meat on the grill");
 
 divHero.appendChild(h1Welcome);
