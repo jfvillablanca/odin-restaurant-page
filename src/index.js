@@ -23,21 +23,33 @@ headerWelcome.appendChild(h2Welcome);
 divHero.appendChild(headerWelcome);
 divHero.appendChild(imgHero);
 
-const divTabs = document.createElement("div");
-divTabs.classList.add("tabs");
-const divTabHome = document.createElement("div");
-divTabHome.classList.add("home");
-divTabHome.textContent = "Home";
-const divTabMenu = document.createElement("div");
-divTabMenu.classList.add("menu");
-divTabMenu.textContent = "Menu";
-const divTabContact = document.createElement("div");
-divTabContact.classList.add("contact");
-divTabContact.textContent = "Contact";
+const navTabs = document.createElement("nav");
+navTabs.classList.add("tabs");
+const ulTabs = document.createElement("ul");
 
-divTabs.appendChild(divTabHome);
-divTabs.appendChild(divTabMenu);
-divTabs.appendChild(divTabContact);
+const liTabHome = document.createElement("li");
+const aTabHome = document.createElement("a");
+aTabHome.setAttribute("href", "#");
+aTabHome.textContent = "Home";
+aTabHome.classList.add("current-tab");
+liTabHome.appendChild(aTabHome);
 
-containerContent.appendChild(divTabs);
+const liTabMenu = document.createElement("li");
+const aTabMenu = document.createElement("a");
+aTabMenu.setAttribute("href", "#");
+aTabMenu.textContent = "Menu";
+liTabMenu.appendChild(aTabMenu);
+
+const liTabContact = document.createElement("li");
+const aTabContact = document.createElement("a");
+aTabContact.setAttribute("href", "#");
+aTabContact.textContent = "Contact";
+liTabContact.appendChild(aTabContact);
+
+ulTabs.appendChild(liTabHome);
+ulTabs.appendChild(liTabMenu);
+ulTabs.appendChild(liTabContact);
+
+navTabs.appendChild(ulTabs);
+containerContent.appendChild(navTabs);
 containerContent.appendChild(divHero);
