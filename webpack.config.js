@@ -3,11 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+  },
+  devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
-      favicon: "./src/images/favicon.png"
+      favicon: "./src/images/favicon.png",
+      template: "./src/index.html",
     }),
   ],
   output: {
