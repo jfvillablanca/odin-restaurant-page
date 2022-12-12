@@ -54,9 +54,6 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content 1fr;
-  grid-template-areas: "A B C"
-                       "D D D";
   justify-items: center;
 
   position: absolute;
@@ -65,14 +62,4 @@ body {
   font-size: 3.1rem;
 
   color: white;
-}
-
-.tabs > .home {
-  grid-area: A;
-}
-.tabs > .menu {
-  grid-area: B;
-}
-.tabs > .contact {
-  grid-area: C;
 }
