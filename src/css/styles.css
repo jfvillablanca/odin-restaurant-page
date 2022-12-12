@@ -60,3 +60,36 @@ body {
 
   color: white;
 }
+
+.tabs ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+  list-style: none;
+  color: white;
+}
+
+.tabs a {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.tabs a.current-tab {
+  font-weight: 1000;
+  color: orange;
+}
+
+.tabs a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  margin-left: -50%;
+  left: 50%;
+  bottom: 0rem;
+  border-bottom: 0.1rem solid white;
+}
