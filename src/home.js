@@ -8,7 +8,7 @@ const h2Welcome = document.createElement("h2");
 h2Welcome.textContent = "Let's feast in Valhalla";
 const imgHero = document.createElement("img");
 imgHero.setAttribute("src", ImgHero);
-imgHero.setAttribute("alt", "A lot of meat on the grill");
+imgHero.setAttribute("alt", "A wooden plate with grilled ribs with pickles and tomatoes as sides");
 
 const headerWelcome = document.createElement("div");
 headerWelcome.classList.add("headers");
