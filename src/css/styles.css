@@ -18,14 +18,18 @@ body {
   display: grid;
 }
 
-.hero {
+.page:not(.current-tab) {
+  display: none;
+}
+
+.page {
   position: relative;
 
   display: grid;
   place-items: center;
 }
 
-.hero img {
+.page img {
   position: absolute;
   z-index: 0;
 
@@ -35,7 +39,7 @@ body {
   filter: brightness(0.3) saturate(0.9);
 }
 
-.hero > .headers {
+.page > .headers {
   position: absolute;
   z-index: 1;
 
@@ -94,7 +98,7 @@ body {
   margin-left: -50%;
   left: 50%;
   bottom: 0rem;
-  border-bottom: 0.1rem solid white;
+  border-bottom: 0.2rem solid white;
 }
 
 .tabs a.current-tab {
