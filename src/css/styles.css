@@ -23,12 +23,7 @@ body {
   transform: translate(calc(100vw));
 }
 
-.page {
-  display: grid;
-  place-items: center;
-}
-
-.page img {
+.page .background-image {
   position: absolute;
   z-index: 0;
 
@@ -38,7 +33,12 @@ body {
   filter: brightness(0.3) saturate(0.9);
 }
 
-.page > .headers {
+.home {
+  display: grid;
+  place-items: center;
+}
+
+.home > .headers {
   position: absolute;
   z-index: 1;
 
@@ -47,14 +47,14 @@ body {
   justify-items: center;
 }
 
-.headers h1 {
+.home > .headers h1 {
   font-family: 'GothicaBold', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
   font-size: 11rem;
   color: orange;
 }
 
-.headers h2 {
+.home > .headers h2 {
   font-family: 'Great Vibes', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 8rem;
 }
