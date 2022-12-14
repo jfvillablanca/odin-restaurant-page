@@ -34,7 +34,7 @@ const createMenuItem = function(foodImage, foodName, foodDesc, foodPrice){
   h3FoodName.textContent = foodName || "Yummy yum in my tum tum";
 
   const pFoodDescription = document.createElement("p");
-  pFoodDescription.textContent = foodDesc || "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. ";
+  pFoodDescription.textContent = foodDesc || "Lorem ipsum dolor sit amet, officia excepteur ex fugiat. ";
 
 
   const h3FoodPrice = document.createElement("h3");
@@ -59,7 +59,7 @@ const menuItem1 = createMenuItem(Food1);
 const menuItem2 = createMenuItem(
   Food2,
   "Greenies for mah green bois",
-  "Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+  "Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain.",
   "$ 1.00",
 );
 
