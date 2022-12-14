@@ -1,6 +1,7 @@
 import './css/menu.css';
 import ImgBg from './images/assets/nico-smit-9ZJOs9hmuKs-unsplash.jpg';
 import Food1 from './images/assets/chad-montano-MqT0asuoIcU-unsplash.jpg';
+import Food2 from './images/assets/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg';
 
 const divMenu = document.createElement("div");
 divMenu.classList.add("menu");
@@ -19,8 +20,7 @@ divMenuBanner.classList.add("header");
 divMenuBanner.appendChild(h1Menu);
 
 // Food Divs
-// Menu Item #1
-const createMenuItem = function(foodImage){
+const createMenuItem = function(foodImage, foodName, foodDesc, foodPrice){
 
   const imgFood = document.createElement("img");
   imgFood.setAttribute("src", foodImage);
@@ -31,14 +31,14 @@ const createMenuItem = function(foodImage){
   divFoodContainer.appendChild(imgFood);
 
   const h3FoodName = document.createElement("h3");
-  h3FoodName.textContent = "Yummy yum in my tum tum";
+  h3FoodName.textContent = foodName || "Yummy yum in my tum tum";
 
   const pFoodDescription = document.createElement("p");
-  pFoodDescription.textContent = "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. ";
+  pFoodDescription.textContent = foodDesc || "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. ";
 
 
   const h3FoodPrice = document.createElement("h3");
-  h3FoodPrice.textContent = "$ 69,420.00";
+  h3FoodPrice.textContent = foodPrice || "$ 69,420.00";
 
   const divDescriptionContainer = document.createElement("div");
   divDescriptionContainer.classList.add("food-description");
@@ -55,8 +55,17 @@ const createMenuItem = function(foodImage){
 }
 // --------------------------------- //
 
+const menuItem1 = createMenuItem(Food1);
+const menuItem2 = createMenuItem(
+  Food2,
+  "Greenies for mah green bois",
+  "Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+  "$ 1.00",
+);
+
 divMenu.appendChild(imgBackground);
 divMenu.appendChild(divMenuBanner);
-divMenu.appendChild(divMenuItem);
+divMenu.appendChild(menuItem1);
+divMenu.appendChild(menuItem2);
 
 export {divMenu};
