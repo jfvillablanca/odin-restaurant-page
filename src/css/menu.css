@@ -1,6 +1,6 @@
 .menu {
   display: grid;
-  grid-template-rows: 15rem repeat(auto-fill, 30rem);
+  grid-template-rows: 20rem repeat(auto-fill, 30rem);
   gap: 1rem;
 }
 
