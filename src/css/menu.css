@@ -1,0 +1,48 @@
+.menu {
+  display: grid;
+  grid-template-rows: 10rem 5em repeat(3, 1fr);
+  grid-template-areas: "."
+                       "A"
+                       "B";
+}
+
+.menu .header {
+  z-index: 1;
+  grid-area: A;
+  display: grid;
+  justify-items: center;
+
+  color: orange;
+  font-family: 'Great Vibes', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10rem;
+}
+
+.menu > .food-menu-item {
+  grid-area: B;
+  height: 100%;
+  width: 60%;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  color: white;
+}
+
+.menu > .food-menu-item .food-image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.menu > .food-menu-item .food-description {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.menu > .food-menu-item img {
+  z-index: 1;
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
