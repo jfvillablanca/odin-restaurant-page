@@ -20,34 +20,39 @@ divMenuBanner.appendChild(h1Menu);
 
 // Food Divs
 // Menu Item #1
-const imgFood = document.createElement("img");
-imgFood.setAttribute("src", Food1);
-imgFood.setAttribute("alt", "Food");
+const createMenuItem = function(foodImage){
 
-const divFoodContainer = document.createElement("div");
-divFoodContainer.classList.add("food-image");
-divFoodContainer.appendChild(imgFood);
+  const imgFood = document.createElement("img");
+  imgFood.setAttribute("src", foodImage);
+  imgFood.setAttribute("alt", "Food");
 
-const h3FoodName = document.createElement("h3");
-h3FoodName.textContent = "Yummy yum in my tum tum";
+  const divFoodContainer = document.createElement("div");
+  divFoodContainer.classList.add("food-image");
+  divFoodContainer.appendChild(imgFood);
 
-const pFoodDescription = document.createElement("p");
-pFoodDescription.textContent = "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia.";
+  const h3FoodName = document.createElement("h3");
+  h3FoodName.textContent = "Yummy yum in my tum tum";
+
+  const pFoodDescription = document.createElement("p");
+  pFoodDescription.textContent = "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. ";
 
 
-const h3FoodPrice = document.createElement("h3");
-h3FoodPrice.textContent = "$ 69,420.00";
+  const h3FoodPrice = document.createElement("h3");
+  h3FoodPrice.textContent = "$ 69,420.00";
 
-const divDescriptionContainer = document.createElement("div");
-divDescriptionContainer.classList.add("food-description");
-divDescriptionContainer.appendChild(h3FoodName);
-divDescriptionContainer.appendChild(pFoodDescription);
-divDescriptionContainer.appendChild(h3FoodPrice);
+  const divDescriptionContainer = document.createElement("div");
+  divDescriptionContainer.classList.add("food-description");
+  divDescriptionContainer.appendChild(h3FoodName);
+  divDescriptionContainer.appendChild(pFoodDescription);
+  divDescriptionContainer.appendChild(h3FoodPrice);
 
-const divMenuItem = document.createElement("div");
-divMenuItem.classList.add("food-menu-item");
-divMenuItem.appendChild(divFoodContainer);
-divMenuItem.appendChild(divDescriptionContainer);
+  const divMenuItem = document.createElement("div");
+  divMenuItem.classList.add("food-menu-item");
+  divMenuItem.appendChild(divFoodContainer);
+  divMenuItem.appendChild(divDescriptionContainer);
+
+  return divMenuItem;
+}
 // --------------------------------- //
 
 divMenu.appendChild(imgBackground);
