@@ -20,6 +20,7 @@ body {
 
 .page:not(.current-tab) {
   display: none;
+  transform: translate(calc(100vw));
 }
 
 .page {
