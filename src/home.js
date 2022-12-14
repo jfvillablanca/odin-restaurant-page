@@ -1,4 +1,4 @@
-import ImgHero from './images/assets/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg';
+import ImgBg from './images/assets/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg';
 
 const divHome = document.createElement("div");
 divHome.classList.add("home");
