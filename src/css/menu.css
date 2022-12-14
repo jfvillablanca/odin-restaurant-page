@@ -9,6 +9,7 @@
   margin-top: 10rem;
   display: grid;
   justify-items: center;
+  align-self: end;
 
   color: orange;
   font-family: 'Great Vibes', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
@@ -20,8 +21,11 @@
   width: 100%;
 
   position: relative;
+  place-self: center;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 5fr;
+  gap: 10rem;
 
   color: white;
 }
