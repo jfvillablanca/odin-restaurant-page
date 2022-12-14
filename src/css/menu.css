@@ -16,11 +16,9 @@
   font-size: 7.5rem;
   font-family: 'Great Vibes', 'Raleway', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
-  /* color: orange; */
 }
 
 .menu > .food-menu-item {
-  /* height: min-content; */
   width: 100%;
 
   position: relative;
@@ -39,7 +37,6 @@
 }
 
 .menu > .food-menu-item .food-image {
-  /* margin-left: 20%; */
   grid-area: A;
   place-self: center;
   height: 25rem;
@@ -61,13 +58,10 @@
   width: 60%;
   grid-area: B;
   display: grid;
-  /* grid-template-rows: 1fr 2fr 1fr; */
   font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
 .menu > .food-menu-item .food-description h3 {
-  /* margin-bottom: 1rem; */
   font-weight: bold;
 }
 
