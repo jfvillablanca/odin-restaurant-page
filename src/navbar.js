@@ -6,7 +6,6 @@ const liTabHome = document.createElement("li");
 const aTabHome = document.createElement("a");
 aTabHome.setAttribute("href", "#");
 aTabHome.textContent = "Home";
-aTabHome.classList.add("current-tab");
 liTabHome.appendChild(aTabHome);
 
 const liTabMenu = document.createElement("li");
