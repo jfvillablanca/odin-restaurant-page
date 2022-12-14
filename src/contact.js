@@ -19,7 +19,30 @@ imgBackground.setAttribute("src", ImgBg);
 imgBackground.setAttribute("alt", "A picture of a rustic restaurant");
 imgBackground.classList.add("background-image");
 
+const divReservationContainer = document.createElement("div");
+divReservationContainer.classList.add("res-container");
+
+const imgRestaurantLocation1 = document.createElement("img");
+imgRestaurantLocation1.setAttribute("src", ImgLoc1);
+imgRestaurantLocation1.setAttribute("alt", "A picture of a rustic restaurant");
+
+const imgRestaurantLocation2 = document.createElement("img");
+imgRestaurantLocation2.setAttribute("src", ImgLoc2);
+imgRestaurantLocation2.setAttribute("alt", "A picture of a rustic restaurant");
+
+const divImageShowcaseContainer = document.createElement("div");
+divImageShowcaseContainer.classList.add("img-container");
+divImageShowcaseContainer.appendChild(imgRestaurantLocation1);
+divImageShowcaseContainer.appendChild(imgRestaurantLocation2);
+
+const divContactDetails = document.createElement("div");
+divContactDetails.classList.add("text-container");
+
+divReservationContainer.appendChild(divImageShowcaseContainer);
+divReservationContainer.appendChild(divContactDetails);
+
 divContact.appendChild(imgBackground);
 divContact.appendChild(headerWelcome);
+divContact.appendChild(divReservationContainer);
 
 export {divContact};
