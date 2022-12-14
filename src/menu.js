@@ -1,4 +1,6 @@
-import ImgHero from './images/assets/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg';
+import './css/menu.css';
+import ImgBg from './images/assets/nico-smit-9ZJOs9hmuKs-unsplash.jpg';
+import Food1 from './images/assets/chad-montano-MqT0asuoIcU-unsplash.jpg';
 
 const divMenu = document.createElement("div");
 divMenu.classList.add("menu");
