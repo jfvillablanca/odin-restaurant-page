@@ -62,6 +62,7 @@
   grid-area: B;
   display: grid;
   /* grid-template-rows: 1fr 2fr 1fr; */
+  font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
