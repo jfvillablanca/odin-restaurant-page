@@ -23,8 +23,6 @@ body {
 }
 
 .page {
-  position: relative;
-
   display: grid;
   place-items: center;
 }
