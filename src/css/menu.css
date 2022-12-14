@@ -1,14 +1,12 @@
 .menu {
   display: grid;
-  grid-template-rows: 10rem 5em repeat(3, 1fr);
-  grid-template-areas: "."
-                       "A"
-                       "B";
+  grid-template-rows: 15rem repeat(auto-fill, 40rem);
+  gap: 1rem;
 }
 
 .menu .header {
   z-index: 1;
-  grid-area: A;
+  margin-top: 10rem;
   display: grid;
   justify-items: center;
 
@@ -18,9 +16,8 @@
 }
 
 .menu > .food-menu-item {
-  grid-area: B;
-  height: 100%;
-  width: 60%;
+  height: min-content;
+  width: 100%;
 
   position: relative;
   display: grid;
