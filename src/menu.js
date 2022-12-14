@@ -13,7 +13,7 @@ imgBackground.setAttribute("alt", "A lot of meat on the grill");
 imgBackground.classList.add("background-image");
 
 const h1Menu = document.createElement("h1");
-h1Menu.textContent = "Dishes";
+h1Menu.textContent = "Chef's Specialties";
 
 const divMenuBanner = document.createElement("div");
 divMenuBanner.classList.add("header");
