@@ -24,11 +24,11 @@ divReservationContainer.classList.add("res-container");
 
 const imgRestaurantLocation1 = document.createElement("img");
 imgRestaurantLocation1.setAttribute("src", ImgLoc1);
-imgRestaurantLocation1.setAttribute("alt", "A picture of a rustic restaurant");
+imgRestaurantLocation1.setAttribute("alt", "A restaurant with stairs to the right and patrons on the left");
 
 const imgRestaurantLocation2 = document.createElement("img");
 imgRestaurantLocation2.setAttribute("src", ImgLoc2);
-imgRestaurantLocation2.setAttribute("alt", "A picture of a rustic restaurant");
+imgRestaurantLocation2.setAttribute("alt", "A warmly lit restaurant with tables");
 
 const divImageShowcaseContainer = document.createElement("div");
 divImageShowcaseContainer.classList.add("img-container");
