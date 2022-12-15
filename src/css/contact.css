@@ -31,7 +31,48 @@
 }
 
 .text-container {
-  margin-right: 30rem;
+  padding: 5rem;
+  display: grid;
+  grid-template: "A A A" 1fr
+                 "B C D" 3fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  height: 60%;
+  width: 60%;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: white;
+  font-family: Merriweather, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-container :nth-child(1) {
+  align-self: center;
+  grid-area: A;
+}
+
+.text-container :not(:first-child)::first-line {
+  font-weight: 700;
+  font-size: 3rem;
+  color: orange;
+}
+
+.text-container :not(:first-child) {
+  font-size: 2rem;
+}
+
+.text-container :nth-child(2) {
+  grid-area: B;
+  white-space: pre-line;
+}
+
+.text-container :nth-child(3) {
+  grid-area: C;
+  white-space: pre-line;
+}
+
+.text-container :nth-child(4) {
+  grid-area: D;
+  white-space: pre-line;
 }
 
 .img-container {
