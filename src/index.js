@@ -10,6 +10,7 @@ import {divContact} from './contact.js';
 const containerContent = document.querySelector("#content");
 containerContent.appendChild(navTabs);
 divHome.classList.add("current-tab");
+aTabHome.classList.add("current-tab");
 containerContent.appendChild(divHome);
 containerContent.appendChild(divMenu);
 containerContent.appendChild(divContact);
