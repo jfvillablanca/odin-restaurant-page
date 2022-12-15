@@ -41,11 +41,14 @@ divContactDetails.classList.add("text-container");
 const h1ContactHeader = document.createElement("h1");
 h1ContactHeader.textContent = "Contact Us:";
 const pAddress = document.createElement("p");
-pAddress.textContent = "Address: Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.";
+pAddress.textContent = `Address: 
+  69 Lorem Ipsum St., cor Sit Amet Ave., Republic of Bayag`;
 const pPhone = document.createElement("p");
-pPhone.textContent = "Phone: +123 456 789";
+pPhone.textContent = `Phone: 
++123 456 789`;
 const pEmail = document.createElement("p");
-pEmail.textContent = "Email: c00l_kid69@example.com"
+pEmail.textContent = `Email: 
+c00l_kid69@example.com`
 divContactDetails.appendChild(h1ContactHeader);
 divContactDetails.appendChild(pAddress);
 divContactDetails.appendChild(pPhone);
